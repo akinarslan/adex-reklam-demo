@@ -1490,3 +1490,44 @@ body.nav-active { overflow: hidden; }
   }
 }
 /* ZY REKLAM GOLD THEME END */
+
+
+/* ZY HERO EMERALD FOOTER START */
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(158deg, transparent 0 26%, rgba(126, 177, 153, 0.08) 31%, transparent 38%),
+    linear-gradient(22deg, transparent 0 60%, rgba(7, 50, 36, 0.48) 66%, transparent 74%),
+    radial-gradient(ellipse at 65% 32%, rgba(188, 218, 199, 0.08), transparent 32%);
+  opacity: .95;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-right {
+  width: 100%;
+}
+
+.footer-signature {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-top: 10px;
+  text-align: right;
+  color: var(--zy-gold-light);
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+/* ZY HERO EMERALD FOOTER END */
