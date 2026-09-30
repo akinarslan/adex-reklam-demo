@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">ZY REKLAM logo</title>
+  <desc id="desc">İç içe iki eşkenar dörtgen içinde üst üste geçen Z ve Y monogramı</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1a6"/>
+      <stop offset=".22" stop-color="#ffd65a"/>
+      <stop offset=".52" stop-color="#e7aa16"/>
+      <stop offset=".78" stop-color="#ffd85f"/>
+      <stop offset="1" stop-color="#b77705"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="url(#gold)" stroke-linejoin="miter" filter="url(#glow)">
+    <path d="M128 14 242 128 128 242 14 128Z" stroke-width="8"/>
+    <path d="M128 42 214 128 128 214 42 128Z" stroke-width="7"/>
+  </g>
+
+  <g fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" filter="url(#glow)">
+    <path d="M72 78 128 132 184 78"/>
+    <path d="M128 132V190"/>
+    <path d="M78 80H178L82 176H180"/>
+  </g>
+
+  <g fill="none" stroke="#fff2a8" stroke-opacity=".48" stroke-width="2.2">
+    <path d="M128 18 238 128 128 238 18 128Z"/>
+    <path d="M128 46 210 128 128 210 46 128Z"/>
+  </g>
+</svg>
