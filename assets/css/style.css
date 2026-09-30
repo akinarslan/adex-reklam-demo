@@ -1874,3 +1874,30 @@ body.nav-active { overflow: hidden; }
   }
 }
 /* ZY LUXURY BUTTONS END */
+
+
+/* HEADER CONTACT TRUE CENTER START */
+.header .btn.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  min-height: 50px;
+  padding: 0 28px;
+  line-height: 1;
+  text-align: center;
+}
+
+.header .btn.btn-primary::before,
+.header .btn.btn-primary::after {
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .header .btn.btn-primary {
+    height: 46px;
+    min-height: 46px;
+    padding: 0 22px;
+  }
+}
+/* HEADER CONTACT TRUE CENTER END */
