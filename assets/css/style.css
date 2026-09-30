@@ -1105,3 +1105,246 @@ body.nav-active { overflow: hidden; }
   .feature-list { grid-template-columns: 1fr 1fr; }
 
 }
+
+/*-----------------------------------*\
+  #ZY REKLAM CUSTOM
+\*-----------------------------------*/
+
+.section-anchor {
+  scroll-margin-top: 90px;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: var(--fw-700);
+  letter-spacing: -0.5px;
+}
+
+.brand-word {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: var(--fw-700);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.header.active > .container > .brand-logo {
+  color: var(--charcoal);
+}
+
+.navbar-top .brand-logo,
+.footer .brand-logo {
+  color: var(--white);
+}
+
+.hero-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-block: 28px 36px;
+}
+
+.hero-services li {
+  padding: 8px 14px;
+  border: 1px solid var(--white_a70);
+  border-radius: var(--radius-pill);
+  color: var(--white);
+  background-color: var(--white_a8);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-700);
+  backdrop-filter: blur(4px);
+}
+
+.contact-section {
+  background-color: var(--white);
+}
+
+.contact-heading {
+  max-width: 700px;
+  margin-inline: auto;
+  margin-block-end: 45px;
+  text-align: center;
+}
+
+.contact-heading .section-text {
+  margin-block-start: 15px;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.contact-card,
+.contact-form {
+  padding: 32px;
+  border-radius: var(--radius-10);
+  box-shadow: var(--shadow-2);
+}
+
+.contact-card {
+  background-color: var(--cultured);
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-block-end: 12px;
+  border-radius: var(--radius-circle);
+  background-color: var(--violet-blue-crayola);
+  color: var(--white);
+  font-size: 2.2rem;
+}
+
+.contact-icon-location {
+  margin-block-start: 30px;
+}
+
+.contact-phone {
+  margin-block-start: 8px;
+  color: var(--violet-blue-crayola);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+}
+
+.contact-card address {
+  margin-block-start: 8px;
+  max-width: 44ch;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+  background-color: var(--white);
+}
+
+.contact-form label {
+  margin-block-start: 7px;
+  color: var(--charcoal);
+  font-weight: var(--fw-700);
+}
+
+.contact-input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--cadet-blue-crayola_a20);
+  border-radius: var(--radius-6);
+  background-color: var(--cultured);
+  color: var(--charcoal);
+  font: inherit;
+  outline: none;
+}
+
+.contact-input:focus {
+  border-color: var(--violet-blue-crayola);
+  box-shadow: 0 0 0 3px hsla(234, 50%, 64%, 0.12);
+}
+
+.contact-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-submit {
+  margin-block-start: 12px;
+  border-color: var(--violet-blue-crayola);
+  background-color: var(--violet-blue-crayola);
+  color: var(--white);
+}
+
+.contact-submit:is(:hover, :focus-visible) {
+  background-color: var(--charcoal);
+  border-color: var(--charcoal);
+}
+
+.form-note {
+  margin-block-start: 5px;
+  font-size: var(--fs-8);
+}
+
+.footer-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.footer-left,
+.footer-right {
+  min-width: 0;
+}
+
+.footer-phone {
+  display: inline-block;
+  margin-block: 8px 12px;
+  color: var(--white);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+}
+
+.footer-address {
+  max-width: 58ch;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-weight: var(--fw-700);
+}
+
+.footer-instagram ion-icon {
+  font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: stretch;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-services {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-word {
+    font-size: 1.6rem;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+}
