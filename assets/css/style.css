@@ -1348,3 +1348,145 @@ body.nav-active { overflow: hidden; }
     height: 40px;
   }
 }
+
+
+/* ZY REKLAM GOLD THEME START */
+:root {
+  --zy-gold: #e9b52d;
+  --zy-gold-light: #ffd968;
+  --zy-gold-deep: #b98008;
+  --zy-black: #111111;
+  --zy-black-soft: #1b1b1b;
+}
+
+.brand-logo-img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 8px rgba(233, 181, 45, 0.28));
+}
+
+.brand-logo { gap: 9px; }
+
+.brand-word {
+  letter-spacing: .8px;
+}
+
+.header > .container > .brand-logo .brand-word,
+.navbar-top .brand-word,
+.footer .brand-word {
+  color: var(--zy-gold-light);
+}
+
+.header.active > .container > .brand-logo .brand-word {
+  color: var(--zy-black);
+}
+
+.header .btn.btn-primary,
+.contact-submit {
+  background: linear-gradient(135deg, var(--zy-gold-light), var(--zy-gold));
+  border-color: var(--zy-gold);
+  color: var(--zy-black);
+  box-shadow: 0 8px 24px rgba(185, 128, 8, .20);
+}
+
+.header .btn.btn-primary:is(:hover, :focus-visible),
+.contact-submit:is(:hover, :focus-visible) {
+  background: var(--zy-black);
+  border-color: var(--zy-gold);
+  color: var(--zy-gold-light);
+}
+
+.header.active .btn {
+  background: linear-gradient(135deg, var(--zy-gold-light), var(--zy-gold));
+  border-color: var(--zy-gold);
+  color: var(--zy-black);
+}
+
+.navbar-link:is(:hover, :focus-visible),
+.header.active .navbar-link:is(:hover, :focus-visible),
+.contact-link:is(:hover, :focus-visible),
+.footer-link:is(:hover, :focus-visible) {
+  color: var(--zy-gold);
+  opacity: 1;
+}
+
+.hero .btn-primary {
+  background: linear-gradient(135deg, var(--zy-gold-light), var(--zy-gold));
+  border-color: var(--zy-gold);
+  color: var(--zy-black);
+}
+
+.hero .btn-primary:is(:hover, :focus-visible) {
+  background: var(--zy-black);
+  color: var(--zy-gold-light);
+  border-color: var(--zy-gold);
+}
+
+.hero .btn-outline {
+  border-color: rgba(255, 217, 104, .80);
+}
+
+.hero .btn-outline:is(:hover, :focus-visible) {
+  background: var(--zy-gold);
+  border-color: var(--zy-gold);
+  color: var(--zy-black);
+}
+
+.hero-services li {
+  border-color: rgba(255, 217, 104, .72);
+}
+
+.section-subtitle {
+  color: var(--zy-gold-deep);
+}
+
+.service-card .card-icon,
+.contact-icon {
+  background: linear-gradient(145deg, var(--zy-gold-light), var(--zy-gold-deep));
+  color: var(--zy-black);
+}
+
+.service-card {
+  border-top: 3px solid rgba(233, 181, 45, .70);
+}
+
+.accordion-btn ion-icon,
+.accordion-btn:is(:hover, :focus-visible) .span,
+.accordion-card.expanded .accordion-btn .span,
+.contact-phone {
+  color: var(--zy-gold-deep);
+}
+
+.feature-card .card-icon {
+  background-color: rgba(233, 181, 45, .18);
+  color: var(--zy-gold-deep);
+}
+
+.project-card {
+  border-bottom: 3px solid rgba(233, 181, 45, .65);
+}
+
+.footer {
+  background: #0d0d0d;
+  border-top: 1px solid rgba(233, 181, 45, .35);
+}
+
+.footer-list-title,
+.footer-phone,
+.footer-instagram {
+  color: var(--zy-gold-light);
+}
+
+.footer-instagram:is(:hover, :focus-visible) {
+  color: var(--zy-gold);
+}
+
+@media (max-width: 430px) {
+  .brand-logo-img {
+    width: 44px;
+    height: 44px;
+  }
+}
+/* ZY REKLAM GOLD THEME END */
