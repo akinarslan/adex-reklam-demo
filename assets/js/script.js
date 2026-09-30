@@ -141,3 +141,43 @@ const initAccordion = function (currentAccordion) {
 }
 
 for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }
+
+/**
+ * CLOSE MOBILE MENU AFTER NAVIGATION
+ */
+const navLinks = document.querySelectorAll(".navbar-link");
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function () {
+    if (navbar.classList.contains("active")) {
+      toggleNavbar();
+    }
+  });
+}
+
+/**
+ * CONTACT FORM -> WHATSAPP
+ */
+const contactForm = document.querySelector("[data-contact-form]");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const name = (formData.get("name") || "").toString().trim();
+    const phone = (formData.get("phone") || "").toString().trim();
+    const message = (formData.get("message") || "").toString().trim();
+
+    const whatsappText = [
+      "Merhaba ZY REKLAM,",
+      "",
+      "Ad: " + name,
+      phone ? "Telefon: " + phone : "",
+      "Mesaj: " + message
+    ].filter(Boolean).join("\n");
+
+    const whatsappUrl = "https://wa.me/905464494849?text=" + encodeURIComponent(whatsappText);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  });
+}
