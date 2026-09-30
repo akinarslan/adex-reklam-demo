@@ -1531,3 +1531,143 @@ body.nav-active { overflow: hidden; }
   letter-spacing: .5px;
 }
 /* ZY HERO EMERALD FOOTER END */
+
+
+/* ZY LUXURY TYPOGRAPHY START */
+:root {
+  --ff-luxury-serif: 'Cormorant Garamond', serif;
+  --ff-luxury-script: 'Great Vibes', cursive;
+}
+
+.brand-word {
+  font-family: var(--ff-luxury-serif);
+  font-size: 2.35rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.navbar-link {
+  position: relative;
+  font-family: var(--ff-luxury-serif);
+  font-size: 1.95rem;
+  font-weight: 600;
+  letter-spacing: .045em;
+  padding-inline: 2px;
+}
+
+@media (min-width: 992px) {
+  .navbar-list {
+    gap: 34px;
+  }
+
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--zy-gold-light), transparent);
+    transform: translateX(-50%);
+    transition: width .28s ease;
+  }
+
+  .navbar-link:is(:hover, :focus-visible)::after {
+    width: 118%;
+  }
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-title-script {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  font-family: var(--ff-luxury-script);
+  font-size: clamp(4.6rem, 8vw, 8.6rem);
+  font-weight: 400;
+  line-height: .9;
+  color: var(--zy-gold-light);
+  text-shadow:
+    0 0 8px rgba(255, 217, 104, .32),
+    0 0 24px rgba(185, 128, 8, .18);
+  transform: rotate(-2deg);
+}
+
+.hero-title-main {
+  display: block;
+  max-width: 15ch;
+  font-family: var(--ff-luxury-serif);
+  font-size: clamp(3.5rem, 5.3vw, 6.6rem);
+  font-weight: 600;
+  line-height: .98;
+  letter-spacing: .015em;
+  color: #fff8dc;
+  text-transform: uppercase;
+  text-wrap: balance;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+}
+
+.hero-title-main::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 1px;
+  margin: 22px auto 0;
+  background: linear-gradient(90deg, transparent, var(--zy-gold), transparent);
+  box-shadow: 0 0 8px rgba(233, 181, 45, .28);
+}
+
+.hero-services {
+  margin-block-start: 24px;
+}
+
+.hero-services li {
+  font-family: var(--ff-luxury-serif);
+  font-size: 1.8rem;
+  letter-spacing: .055em;
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    align-items: flex-start;
+  }
+
+  .hero-title-script {
+    margin-left: 18px;
+  }
+
+  .hero-title-main::after {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-word {
+    font-size: 1.85rem;
+    letter-spacing: .09em;
+  }
+
+  .navbar-link {
+    font-size: 2.15rem;
+  }
+
+  .hero-title-script {
+    font-size: clamp(4.2rem, 15vw, 6.4rem);
+  }
+
+  .hero-title-main {
+    font-size: clamp(3.1rem, 10.6vw, 4.8rem);
+    max-width: 13ch;
+  }
+}
+/* ZY LUXURY TYPOGRAPHY END */
