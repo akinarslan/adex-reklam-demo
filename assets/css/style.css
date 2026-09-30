@@ -1901,3 +1901,29 @@ body.nav-active { overflow: hidden; }
   }
 }
 /* HEADER CONTACT TRUE CENTER END */
+
+
+/* ZY FOOTER EMERALD ALIGN START */
+.footer {
+  background:
+    radial-gradient(ellipse at 78% 18%, rgba(42, 104, 78, 0.30) 0%, rgba(42, 104, 78, 0.08) 28%, transparent 48%),
+    radial-gradient(ellipse at 24% 68%, rgba(23, 79, 59, 0.24) 0%, transparent 44%),
+    linear-gradient(135deg, #020a08 0%, #06251c 46%, #010705 100%);
+  border-top: 1px solid rgba(233, 181, 45, .28);
+}
+
+.footer-right {
+  width: auto;
+  align-items: flex-start;
+}
+
+.footer-signature {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding-top: 0;
+  text-align: left;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: .35px;
+}
+/* ZY FOOTER EMERALD ALIGN END */
