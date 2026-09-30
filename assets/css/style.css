@@ -1671,3 +1671,68 @@ body.nav-active { overflow: hidden; }
   }
 }
 /* ZY LUXURY TYPOGRAPHY END */
+
+
+/* ZY FULL SIGNATURE HERO START */
+.hero-title.hero-title-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 100%;
+  margin: 0 auto 22px;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(4.6rem, 7.2vw, 8.4rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: .005em;
+  text-transform: none;
+  color: var(--zy-gold-light);
+  text-align: center;
+  text-wrap: balance;
+  text-shadow:
+    0 0 7px rgba(255, 223, 118, .30),
+    0 0 18px rgba(233, 181, 45, .15),
+    0 3px 18px rgba(0, 0, 0, .32);
+}
+
+.hero-title.hero-title-signature span {
+  display: block;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
+}
+
+.hero-title.hero-title-signature::after {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 1px;
+  margin-top: 24px;
+  background: linear-gradient(90deg, transparent, var(--zy-gold-light), transparent);
+  box-shadow: 0 0 10px rgba(233, 181, 45, .32);
+}
+
+@media (min-width: 992px) {
+  .hero-title.hero-title-signature {
+    align-items: flex-start;
+    margin-inline: 0;
+    text-align: left;
+    max-width: 10.5ch;
+    font-size: clamp(5.1rem, 6.1vw, 8.5rem);
+  }
+
+  .hero-title.hero-title-signature::after {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title.hero-title-signature {
+    font-size: clamp(4rem, 13vw, 6.2rem);
+    line-height: 1;
+  }
+}
+/* ZY FULL SIGNATURE HERO END */
