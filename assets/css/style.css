@@ -1966,3 +1966,9 @@ body.nav-active { overflow: hidden; }
   line-height: 1.15;
   letter-spacing: 0;
 }
+
+@media (min-width: 768px) {
+  .hero-title.hero-title-signature {
+    font-size: 45pt;
+  }
+}
