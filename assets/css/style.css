@@ -1951,17 +1951,17 @@ body.nav-active { overflow: hidden; }
   .brand-wordmark { width: 151px; }
 }
 
-/* Uploaded Big Larian Customs font for the hero headline. */
+/* Uploaded Citadel of Blackrose font for the hero headline. */
 @font-face {
-  font-family: 'Big Larian Customs';
-  src: url('../fonts/big-larian-customs.woff') format('woff');
+  font-family: 'Citadel of Blackrose';
+  src: url('../fonts/citadel-of-blackrose.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 .hero-title.hero-title-signature {
-  font-family: 'Big Larian Customs', 'Great Vibes', cursive;
+  font-family: 'Citadel of Blackrose', 'Great Vibes', cursive;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0;
