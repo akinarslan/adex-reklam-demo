@@ -74,7 +74,49 @@
         <ul class="navbar-list">
           <li><a href="#anasayfa" class="navbar-link">Ana Sayfa</a></li>
           <li><a href="#hakkinda" class="navbar-link">Hakkında</a></li>
-          <li><a href="#projeler" class="navbar-link">Projeler</a></li>
+          <li class="has-mega" data-mega>
+            <button class="mega-menu-toggle" type="button" aria-expanded="false" aria-controls="projects-mega-menu" data-mega-toggle>
+              <span>Projeler</span>
+              <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="mega-menu" id="projects-mega-menu" data-mega-menu>
+              <div class="mega-menu-head">
+                <span>Üretim Alanlarımız</span>
+                <small>Detayları görmek için bir kategori seçin</small>
+              </div>
+
+              <div class="mega-menu-grid">
+                <a href="./imalat.html" class="mega-card">
+                  <img src="./assets/images/hero-slide-3.jpg" alt="İmalat için geçici proje görseli">
+                  <span class="mega-card-overlay"></span>
+                  <strong>İmalat</strong>
+                  <small>Detayları Gör</small>
+                </a>
+
+                <a href="./tabela-montaj.html" class="mega-card">
+                  <img src="./assets/images/blog-1.jpg" alt="Tabela ve montaj için geçici proje görseli">
+                  <span class="mega-card-overlay"></span>
+                  <strong>Tabela ve Montaj</strong>
+                  <small>Detayları Gör</small>
+                </a>
+
+                <a href="./lazer-kesim.html" class="mega-card">
+                  <img src="./assets/images/blog-3.jpg" alt="Lazer kesim için geçici proje görseli">
+                  <span class="mega-card-overlay"></span>
+                  <strong>Lazer Kesim</strong>
+                  <small>Detayları Gör</small>
+                </a>
+
+                <a href="./dijital-baski.html" class="mega-card">
+                  <img src="./assets/images/blog-2.jpg" alt="Dijital baskı için geçici proje görseli">
+                  <span class="mega-card-overlay"></span>
+                  <strong>Dijital Baskı</strong>
+                  <small>Detayları Gör</small>
+                </a>
+              </div>
+            </div>
+          </li>
           <li><a href="#promosyonlar" class="navbar-link">Promosyonlar</a></li>
         </ul>
 
@@ -118,13 +160,6 @@
               <span>Projenize özel</span>
               <span>çözümler üretiyoruz</span>
             </h1>
-
-            <ul class="hero-services" aria-label="Hizmetlerimiz">
-              <li>İmalat</li>
-              <li>Tabela ve Montaj</li>
-              <li>Lazer Kesim</li>
-              <li>Dijital Baskı</li>
-            </ul>
 
             <div class="btn-wrapper">
               <a href="#projeler" class="btn btn-primary">Projeleri İncele</a>
