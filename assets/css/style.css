@@ -2464,3 +2464,17 @@ body.nav-active { overflow: hidden; }
   }
 }
 /* PROJECTS COLOR FIX END */
+
+/* MILESDANE DEMO NAV START */
+/* Milesdane binary is not present; keep all requested controls visually consistent using the installed demo font fallback. */
+.navbar-link,
+.mega-menu-toggle,
+.header .btn.btn-primary,
+.hero .btn.btn-primary,
+.mega-menu-head > span,
+.mega-card strong {
+  font-family: 'Citadel of Blackrose', 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: .015em;
+}
+/* MILESDANE DEMO NAV END */
