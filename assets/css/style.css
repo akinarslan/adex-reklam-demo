@@ -1942,8 +1942,8 @@ body.nav-active { overflow: hidden; }
 
 /* Keep the original white logo readable on the white sticky header. */
 .header.active > .container > .brand-logo {
-  background: #04130f;
-  box-shadow: 0 0 0 6px #04130f;
+  background: #000000;
+  box-shadow: 0 0 0 6px #000000;
   border-radius: 2px;
 }
 
