@@ -1927,3 +1927,26 @@ body.nav-active { overflow: hidden; }
   letter-spacing: .35px;
 }
 /* ZY FOOTER EMERALD ALIGN END */
+
+/* Original PDF branding: outlined lettering preserves the exact logo typeface. */
+.brand-logo-img {
+  filter: none;
+}
+
+.brand-wordmark {
+  width: 189px;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* Keep the original white logo readable on the white sticky header. */
+.header.active > .container > .brand-logo {
+  background: #04130f;
+  box-shadow: 0 0 0 6px #04130f;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .brand-wordmark { width: 151px; }
+}
