@@ -181,3 +181,43 @@ if (contactForm) {
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   });
 }
+
+
+/* PROJECTS MEGA MENU START */
+const megaRoot = document.querySelector("[data-mega]");
+const megaToggle = document.querySelector("[data-mega-toggle]");
+
+const closeMegaMenu = function () {
+  if (!megaRoot || !megaToggle) return;
+  megaRoot.classList.remove("is-open");
+  megaToggle.setAttribute("aria-expanded", "false");
+};
+
+if (megaRoot && megaToggle) {
+  megaToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+    const willOpen = !megaRoot.classList.contains("is-open");
+    megaRoot.classList.toggle("is-open", willOpen);
+    megaToggle.setAttribute("aria-expanded", String(willOpen));
+  });
+
+  megaRoot.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  document.addEventListener("click", closeMegaMenu);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMegaMenu();
+      megaToggle.focus();
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 992 && navbar.classList.contains("active")) {
+      toggleNavbar();
+    }
+  });
+}
+/* PROJECTS MEGA MENU END */
