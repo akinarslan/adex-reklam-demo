@@ -1972,3 +1972,119 @@ body.nav-active { overflow: hidden; }
     font-size: 45pt;
   }
 }
+
+
+/* FLOATING WHATSAPP START */
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 58px;
+  height: 58px;
+  padding: 0 17px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e 0%, #128c4b 100%);
+  color: #fff;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, .28),
+    0 0 0 1px rgba(255,255,255,.10);
+  font-family: var(--ff-manrope);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+  isolation: isolate;
+}
+
+.floating-whatsapp ion-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 2.8rem;
+  flex: 0 0 auto;
+}
+
+.floating-whatsapp-label {
+  position: relative;
+  z-index: 2;
+  line-height: 1;
+}
+
+.floating-whatsapp-ring {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 2px solid rgba(37, 211, 102, .48);
+  animation: whatsappPulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+.floating-whatsapp::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255,255,255,.12), transparent 45%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-whatsapp:is(:hover, :focus-visible) {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, .32),
+    0 0 20px rgba(37, 211, 102, .20);
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: .72;
+  }
+  70% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .floating-whatsapp {
+    right: 16px;
+    bottom: 16px;
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .floating-whatsapp-label {
+    display: none;
+  }
+
+  .floating-whatsapp ion-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-whatsapp-ring {
+    animation: none;
+  }
+
+  .floating-whatsapp {
+    transition: none;
+  }
+}
+/* FLOATING WHATSAPP END */
