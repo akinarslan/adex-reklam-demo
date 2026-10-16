@@ -2478,3 +2478,33 @@ body.nav-active { overflow: hidden; }
   letter-spacing: .015em;
 }
 /* MILESDANE DEMO NAV END */
+
+
+/* ZY ULTRAWIDE LAYOUT START */
+/*
+ * The original template stops growing at 1320px.
+ * Keep the existing layout untouched on laptops/desktops,
+ * but use more of the viewport on large Full HD / TV displays.
+ */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1.02fr .98fr;
+    column-gap: 84px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1760px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 110px;
+  }
+}
+/* ZY ULTRAWIDE LAYOUT END */
